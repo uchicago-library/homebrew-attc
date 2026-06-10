@@ -4,7 +4,6 @@ class Attc < Formula
   url "https://github.com/uchicago-library/attachment-converter/archive/refs/tags/v0.1.5.tar.gz"
   sha256 "60a5ac2741c2ecaaf36585e2a370a7ecb3274eca66f68ef23c4657426b21fc21"
   license "GPL-3.0-or-later"
-  env :std
 
   depends_on "opam" => :build
   depends_on "ghostscript"

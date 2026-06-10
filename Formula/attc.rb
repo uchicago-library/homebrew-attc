@@ -11,11 +11,12 @@ class Attc < Formula
   depends_on "mercurial"
   depends_on "pandoc"
   depends_on "verapdf"
+  depends_on "libreoffice"
   depends_on "vips"
 
   def install
     ENV.deparallelize
-    system "env", "OPAMSOLVERTIMEOUT=0", "make", "pkg-build", "SOLVER=aspcud"
+    system "env", "OPAMSOLVERTIMEOUT=0", "make", "pkg-build", "SOLVER=builtin-0install"
     bin.install "_build/default/main.exe" => "attc"
     lib.install Dir["conversion-scripts/*"]
   end

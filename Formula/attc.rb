@@ -15,7 +15,7 @@ class Attc < Formula
 
   def install
     ENV.deparallelize
-    system "make", "pkg-build", "SOLVER=aspcud"
+    system "env", "OPAMSOLVERTIMEOUT=0", "make", "pkg-build", "SOLVER=aspcud"
     bin.install "_build/default/main.exe" => "attc"
     lib.install Dir["conversion-scripts/*"]
   end

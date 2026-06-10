@@ -11,7 +11,6 @@ class Attc < Formula
   depends_on "mercurial"
   depends_on "pandoc"
   depends_on "verapdf"
-  depends_on "libreoffice"
   depends_on "vips"
 
   def install

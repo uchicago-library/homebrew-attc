@@ -6,6 +6,7 @@ class Attc < Formula
   license "GPL-3.0-or-later"
 
   depends_on "opam" => :build
+  depends_on "aspcud" => :build
   depends_on "ghostscript"
   depends_on "mercurial"
   depends_on "pandoc"
@@ -14,7 +15,7 @@ class Attc < Formula
 
   def install
     ENV.deparallelize
-    system "make", "pkg-build"
+    system "make", "pkg-build", "SOLVER=aspcud"
     bin.install "_build/default/main.exe" => "attc"
     lib.install Dir["conversion-scripts/*"]
   end

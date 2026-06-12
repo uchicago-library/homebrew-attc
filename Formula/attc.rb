@@ -14,9 +14,10 @@ class Attc < Formula
 
   def install
     ENV.deparallelize
-    system "env", "OPAMSOLVERTIMEOUT=0", "make", "pkg-build"
+    system "env", "OPAMSOLVERTIMEOUT=0", "make", "pkg-build", "gen-man-page"
     bin.install "_build/default/main.exe" => "attc"
     lib.install Dir["conversion-scripts/*"]
+    man1.install "doc/attc.1"
   end
 
   def caveats

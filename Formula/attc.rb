@@ -1,8 +1,8 @@
 class Attc < Formula
   desc "Tool for batch-converting attachments to preservation formats"
   homepage "https://github.com/uchicago-library/attachment-converter"
-  url "https://github.com/uchicago-library/attachment-converter/archive/refs/tags/v0.1.37.tar.gz"
-  sha256 "3cb35b38bf336c2a4922a3583907f3cc893ade2b8da4df7eef7d3f094bca6f03"
+  url "https://github.com/uchicago-library/attachment-converter/archive/refs/tags/v0.1.39.tar.gz"
+  sha256 "accfd5fc4dab2a160dd979642a4d1f708b5472aee323ceb8210125e9b254cd77"
   license "GPL-3.0-or-later"
 
   depends_on "opam" => :build

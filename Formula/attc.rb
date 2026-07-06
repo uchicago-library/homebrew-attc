@@ -11,6 +11,7 @@ class Attc < Formula
   depends_on "pandoc"
   depends_on "verapdf"
   depends_on "vips"
+  depends_on "poppler"
 
   def install
     ENV.deparallelize

@@ -5,6 +5,7 @@ class Attc < Formula
   sha256 "b64e982b43e98279913b6e7274c82c792a7cdd9fb621d04e7c8c7a3056550f8d"
   license "GPL-3.0-or-later"
 
+  version 0.2.10
   revision 4
 
   depends_on "opam" => :build

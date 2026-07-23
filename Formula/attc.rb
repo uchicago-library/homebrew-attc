@@ -15,7 +15,7 @@ class Attc < Formula
   def install
     ENV.deparallelize
     bin.install "attc"
-    lib.install Dir["conversion-scripts/*"]
+    bin.install Dir["conversion-scripts/*"]
     man1.install "doc/attc.1"
   end
 
